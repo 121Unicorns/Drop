@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "791793756276",
+    "project_id": "vamped-52a6a",
+    "storage_bucket": "vamped-52a6a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:791793756276:android:3f5adad6fc36dfa6468921",
+        "android_client_info": {
+          "package_name": "com.unicorn.vamped"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "791793756276-ih87cuaciemej4d262tqeu9d66lrcmg1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIm_ecIygoj0QwnfXyZRT3Vih8L3o8pLo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "791793756276-ih87cuaciemej4d262tqeu9d66lrcmg1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">Drop</string>
+    <string name="dark_mode_def_value">MODE_NIGHT_SYSTEM_DEFAULT</string>
+    <string name="str_mood">Mood</string>
+    <string name="str_pain">Symptoms</string>
+    <string name="str_contra">Contraception</string>
+    <string name="str_flow">Flow</string>
+    <string name="str_createdata">CREATE TABLE "data_table" ("eventdate" integer(8), "eventtype" integer(3), "intensity" integer(3));</string>
+    <string name="str_createsymp">CREATE TABLE "symptoms_table" ("eventdate" integer(8), "symptom" integer(3));</string>
+
+    <string-array name="mood_array">
+        <item>Tired</item>
+        <item>Energetic</item>
+        <item>Sad</item>
+        <item>Happy</item>
+        <item>Angry</item>
+        <item>Edgy/Irritable</item>
+        <item>Frisky</item>
+    </string-array>
+
+    <string-array name="pain_array">
+        <item>Intercourse</item>
+        <item>Cramps</item>
+        <item>Headache/Migraine</item>
+        <item>Back Pain</item>
+        <item>Nausea</item>
+        <item>Diarrhea</item>
+        <item>Thrush/Candidiasis</item>
+        <item>Tender Breasts</item>
+        <item>Discharge</item>
+        <item>Bloating</item>
+        <item>Cravings</item>
+        <item>Pimples</item>
+    </string-array>
+
+    <string-array name="contra_array">
+        <item>Contraceptive Pill</item>
+        <item>Contraceptive Injection</item>
+        <item>New Patch</item>
+        <item>New IUD</item>
+        <item>New Ring</item>
+    </string-array>
+
+    <string-array name="flow_array">
+        <item>Spotting</item>
+        <item>Light</item>
+        <item>Medium</item>
+        <item>Heavy</item>
+    </string-array>
+
+    <string-array name="symp_array">
+        <item>Intercourse</item>
+        <item>Contraceptive Pill</item>
+        <item>Contraceptive Injection</item>
+        <item>New Patch</item>
+        <item>New IUD</item>
+        <item>New Ring</item>
+        <item>Cramps</item>
+        <item>Headache/Migraine</item>
+        <item>Back Pain</item>
+        <item>Nausea</item>
+        <item>Diarrhea</item>
+        <item>Thrush/Candidiasis</item>
+        <item>Tender Breasts</item>
+        <item>Discharge</item>
+        <item>Bloating</item>
+        <item>Cravings</item>
+        <item>Pimples</item>
+        <item>Tired</item>
+        <item>Energetic</item>
+        <item>Sad</item>
+        <item>Happy</item>
+        <item>Angry</item>
+        <item>Edgy/Irritable</item>
+        <item>Frisky</item>
+    </string-array>
+
+</resources>

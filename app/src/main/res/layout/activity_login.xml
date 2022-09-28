@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/loginlayout"
+    tools:context=".LoginActivity">
+
+    <View
+        android:id="@+id/ellipse_1"
+        android:layout_width="295dp"
+        android:layout_height="296dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="-70dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-109dp"
+        android:background="@drawable/ic_circle"
+        android:backgroundTint="@color/colorPrimary"
+        android:elevation="4dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="20dp"
+        android:text="Skip"
+        android:fontFamily="sans-serif-light"
+        android:textSize="16sp"
+        android:layout_gravity="right"
+        />
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/ellipse"
+        android:elevation="4dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:translationZ="90dp">
+
+        <View
+            android:id="@+id/vampire"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/vampire"
+            android:backgroundTint="@color/colorBlack"
+            android:elevation="4dp"
+            android:outlineAmbientShadowColor="@color/colorGrey" />
+
+        <TextView
+            android:id="@+id/vamped"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/vampire"
+            android:fontFamily="@font/abrilfatface"
+            android:textSize="28sp"
+            android:text="VAMPED"
+            android:textAppearance="@style/vampedtext"
+            android:textColor="@color/colorBlack" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/layout1"
+        android:text="SIGN IN"
+        android:textAppearance="@style/vampedtext"
+        android:fontFamily="@font/abrilfatface"
+        android:gravity="top"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_email"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/tv_signin"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        app:startIconDrawable="@drawable/ic_mail"
+        app:startIconTint="@color/colorGrey"
+        android:textColorHint="@color/colorGrey"
+        android:layout_marginBottom="5dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif-light"
+            android:background="@drawable/tv_background"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="5dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_password"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/til_email"
+        app:startIconDrawable="@drawable/ic_lock"
+        app:startIconTint="@color/colorGrey"
+        android:textColorHint="@color/colorGrey"
+        app:passwordToggleEnabled="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="5dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif-light"
+            android:background="@drawable/tv_background"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="5dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_signin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_gradient_style"
+        android:layout_below="@id/til_password"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="15dp"
+        android:text="SIGN IN"
+        android:gravity="left"
+        android:textSize="20sp"
+        android:fontFamily="@font/abrilfatface"
+        />
+
+    <Button
+        android:id="@+id/btn_gsignin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_gradient_style"
+        android:layout_below="@id/btn_signin"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:text="SIGN IN WITH GOOGLE"
+        android:gravity="left"
+        android:textAppearance="@style/vampedtext"
+        android:textSize="20sp"
+        android:fontFamily="@font/abrilfatface"
+        />
+
+    <Button
+        android:id="@+id/btn_forgotpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_below="@id/btn_gsignin"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="10dp"
+        android:text="Forgot Password?"
+        android:gravity="center"
+        android:textAppearance="@style/vampedtext"
+        android:textSize="14sp"
+        android:fontFamily="sans-serif-light"
+        />
+
+    <Button
+        android:id="@+id/btn_opensignup"
+        android:layout_below="@id/btn_forgotpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="15dp"
+        android:text="Don't have an account? Sign up."
+        android:gravity="center"
+        android:textAppearance="@style/vampedtext"
+        android:textSize="14sp"
+        android:fontFamily="sans-serif-light"
+        />
+
+</RelativeLayout>

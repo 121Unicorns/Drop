@@ -1,0 +1,48 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fontFamily="sans-serif-light">
+    <PreferenceCategory app:title="General Settings">
+        <SwitchPreferenceCompat
+            app:icon="@drawable/ic_palette"
+            app:defaultValue="@string/dark_mode_def_value"
+            app:key="theme"
+            app:title="Use Dark Theme"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Cycle Settings">
+        <EditTextPreference
+            app:icon="@drawable/ic_drop"
+            app:key="periodlength"
+            app:title="Period Length"
+            app:defaultValue="5"
+            app:useSimpleSummaryProvider="true"/>
+        <EditTextPreference
+            app:icon="@drawable/ic_clock"
+            app:key="luteallength"
+            app:title="Luteal Phase Length"
+            app:defaultValue="14"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            app:icon="@drawable/ic_heart"
+            app:key="cyclelength"
+            app:title="Cycle Length"
+            app:defaultValue="28"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Data Management">
+        <Preference
+            app:icon="@drawable/ic_download"
+            app:key="save"
+            app:title="Save Your Data"
+            app:summary="Save your cycle data to your device"
+            app:useSimpleSummaryProvider="true" />
+        <Preference
+            app:icon="@drawable/ic_backup"
+            app:key="upload"
+            app:title="Upload your data"
+            app:summary="Upload your data to a cloud provider"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
